@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b2958fbd3d.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src='main.js'></script>
+    <!-- <script src='main.js'></script> -->
 </head>
 <body>
 
@@ -50,10 +50,11 @@
     </header>
     <main>
         <div class="showcase">
-            <h1>UPCOMING EVENTS</h1>
-            <h2>Technovate</h2>
-            <p>23 January '21</p>
-            <button class="button">Explore</button>
+            <img src="Images/1.jpg" alt="event" class="rellax" data-rellax-speed="-3">
+            <h1 class="rellax" data-rellax-speed="10">UPCOMING EVENTS</h1>
+            <h2 class="rellax" data-rellax-speed="1">Technovate</h2>
+            <p class="rellax" data-rellax-speed="1">23 January '21</p>
+            <button class="button rellax" data-rellax-speed="1">Explore</button>
 
         </div>
 
@@ -65,22 +66,22 @@
 
         <div class="main">
             <div class="flex-container">
-                <div class="flex-item">
+                <div class="flex-item" data-scroll>
                     <img src="Images/icon1.png">
                     <h5>TECHNICAL CLUBS</h5>
-                    <p>Brush up your technical skills with exposure</p>
+                    <p>Explore ideas and enrich your technical knowledge</p>
                 </div>
 
-                <div class="flex-item">
+                <div class="flex-item" data-scroll>
                     <img src="Images/icon2.png">
                     <h5>CULTURAL CLUBS</h5>
-                    <p>Explore your creativity among friends</p>
+                    <p>Get over your stage fear and be creative</p>
                 </div>
 
-                <div class="flex-item">
+                <div class="flex-item" data-scroll>
                     <img src="Images/icon3.png">
                     <h5>SPORTS CLUBS</h5>
-                    <p>Healthy Mind requires a Healthy Body</p>
+                    <p>Healthy Body and Healthy Mind</p>
                 </div>
             </div>
 
@@ -93,19 +94,19 @@
             <hr><br><br>
 
             <div class="flex-container">
-                <div class="flex-item">
+                <div class="flex-item" data-scroll>
                     <img src="Images/icon4.png">
                     <h5>ABHIKALPAN</h5>
                     <p>The annual technical festival of IIITDMJ.</p>
                 </div>
 
-                <div class="flex-item">
+                <div class="flex-item" data-scroll>
                     <img src="Images/icon5.png">
                     <h5>TARANG</h5>
                     <p>The annual cultural festival of IIITDMJ.</p>
                 </div>
 
-                <div class="flex-item">
+                <div class="flex-item" data-scroll>
                     <img src="Images/icon6.png">
                     <h5>GUSTO</h5>
                     <p>The annual sports festival of IIITDMJ.</p>
@@ -122,31 +123,40 @@
             
             <div class="main">
                 <div class="flex-container">
-                    <div class="flex-item" id="big-item">
+                    <div class="flex-item" id="big-item" data-scroll>
                         <img src="Images/icon7.png">
                         <h5>ROBOCON</h5>
                         <p>An international arena based robotics competition.</p>
                     </div>
 
-                    <div class="flex-item" id="big-item">
+                    <div class="flex-item" id="big-item" data-scroll>
                         <img src="Images/icon8.png">
                         <h5>SUPRA</h5>
                         <p>International IC engine formula student car competition.</p>
                     </div>
 
-                    <div class="flex-item" id="big-item">
+                    <div class="flex-item" id="big-item" data-scroll>
                         <img src="Images/icon9.png">
                         <h5>FORMULA BHARAT</h5>
                         <p>International Electric formula student car competition.</p>
                     </div>
                 </div>
-
                 <br><br><hr><br><br>
         </div>
         <footer>
             <p>Copyright &copy; 2019, Code Addict</p>
         </footer>
     </main>
+
+<script src="js/rellax.min.js"></script>
+<script>
+    var rellax = new Rellax('.rellax');
+</script>
+
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script>
+    ScrollOut();
+</script>
 
 
 </body>
