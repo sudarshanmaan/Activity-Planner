@@ -174,11 +174,11 @@ align-items: center;
 }
 
 .flex-item{
-    width: 28%;
+    width: 370px;
     height: 200px;
     display: inline-block;
     text-align: center;
-    margin: 1.33%;
+    margin: 1.66%;
     vertical-align: middle;
     border: #4c4e52 1px solid;
     border-radius: 10px;
