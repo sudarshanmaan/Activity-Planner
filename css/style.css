@@ -1,48 +1,54 @@
 *{
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #303a52a9;
+    background: #202020;
     animation: yourAnimation 2s forwards 0s ease-in-out;
 }
 
 @keyframes yourAnimation{
     0%{
         transform: rotate(0);
-        background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+        /* background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244)); */
         opacity: 0.25;
         }
     100%{
         transform: rotate(0);
-        background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+        /* background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244)); */
         opacity: 1;
         }
 }
 
 .main-header{
-    height: 55px;
-    background-color: #303a52;
-    color: blanchedalmond;
+    height: 70px;
+    background-color: #000000;
+    color: white;
 }
 
 #brand-logo{
-    width: 25px;
+    width: 55px;
     padding: 4px;
+    margin-top: 10px;
 }
 .brand{
     display: inline-block;
     margin: 6px 12px;
     vertical-align: middle;
-    font-size: 26px;
+    font-size: 3rem;
     font-weight: 500;
 }
 
 .brand a{
     text-decoration: none;
-    color: blanchedalmond;
+    color: white;
+    font-weight: 700;
 }
 
 .nav-list-item{
@@ -56,7 +62,7 @@ body{
     vertical-align: middle;
     display: inline-block;
     text-align: right;
-    width: calc(100% - 300px);
+    width: calc(100% - 320px);
     margin: 0;
 }
 
@@ -64,6 +70,7 @@ body{
     text-decoration: none;
     color: rgba(5, 5, 5, 0.87);
     color: inherit;
+    font-size: 1.6rem;
 }
 
 .nav-list-item:hover{
@@ -74,43 +81,43 @@ body{
 }
 
 .showcase{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    /* background: url(../Images/1.jpg) no-repeat; */
-    background-size: 1200px 500px;
+    background: url(../Images/wallpapersden.com_microphone-music-bw_5120x2880.jpg) no-repeat;
+    background-size: 95% 100%;
     background-position: 20px 48px;
     padding: 20px;
     margin-left: 0;
-    color: #c5e3f6;
+    color: white;
     animation: yourAnimation1 1.2s forwards 0s ease-out;
 }
 
 @keyframes yourAnimation1{
     0%{
         transform: rotate(0) scale(0.6) skewX(0deg);
-        background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+        /* background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244)); */
         opacity: 0;
         }
     100%{
         transform: rotate(0) scale(1) skewX(0);
-        background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+        /* background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244)); */
         opacity: 1;
         }
 }
 
 .showcase img{
     position: absolute;
-    top: 5%;
-    left: 2.5%;
+    top: 15%;
+    right: 5%;
     z-index: -1;
-    width: 90%;
+    width: 30%;
 }
 
 .showcase h1{
     position: absolute;
-    top: 22%;
+    top: 40%;
     left: 5.6%;
-    font-size: 50px;
+    font-size: 100px;
     font-weight: 600;
     animation: yourAnimation2 1.4s forwards 0s ease;
 }
@@ -128,7 +135,7 @@ body{
 
 .showcase h2{
     position: absolute;
-    top: 34%;
+    top: 56%;
     left: 5.6%;
     font-size: 40px;
 }
@@ -158,15 +165,61 @@ body{
     color: #44b0d1bb;
 }
 
-.header{
-    color: #4bbfe2;
+.header h1{
+    color: #ffffff;
     text-align: center;
-    margin: 50px;
-    font-size: 50px;
+    margin-top: 150px;
+    font-size: 60px;
     font-weight: 700;
 }
 
-.flex-container{
+.sub-header{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.main{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+}
+
+.content-para{
+    font-size: 20px;
+    color: white;
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.plain-text{
+    font-size: 2rem;
+    color: rgb(192, 192, 192);
+    text-align: center;
+    font-weight: 400;
+}
+
+.events-photo{
+    padding: 26px;
+    width: 80rem;
+}
+
+.cropped2 {
+    width: 42%; /* width of container */
+    height: 42%; /* height of container */
+    object-fit: cover;
+    object-position: 0 120px; /* try 20px 10px */ 
+}
+
+/* .flex-container{
 margin-top: 0px;
 clear: both;
 float: inline-start;
@@ -190,9 +243,9 @@ align-items: center;
 
 .flex-item img{
     padding-top: 12px;
-}
+} */
 
-#big-item{
+/* #big-item{
     padding-top: 9px;
 }
 
@@ -213,14 +266,28 @@ align-items: center;
     margin: auto;
     color: rgb(238, 234, 234);
     font-size: 15px;
-}
+} */
 
 footer{
     background-color: #333;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     padding: 1.2rem;
     margin-top: 4%;
+    font-size: 1.6rem;
+}
+
+footer p{
+    display: inline;
+    text-align: justify;
+}
+
+footer h2{
+    display: inline;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: left;
+    padding-right: 3rem;
 }
 
 [data-scroll]{
