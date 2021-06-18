@@ -1,4 +1,5 @@
 *{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
+    /* font-family: "SF Pro Display", sans-serif; */
     background: #202020;
     animation: yourAnimation 2s forwards 0s ease-in-out;
 }
@@ -27,19 +29,21 @@ body{
 }
 
 .main-header{
-    height: 70px;
-    background-color: #000000;
+    background-color: #161616;
     color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#brand-logo{
-    width: 55px;
-    padding: 4px;
-    margin-top: 10px;
+.brand-logo{
+    width: 4.5rem;
+    padding: 0.5rem;
 }
 .brand{
     display: inline-block;
-    margin: 6px 12px;
+    margin: 1.2rem;
     vertical-align: middle;
     font-size: 3rem;
     font-weight: 500;
@@ -52,31 +56,27 @@ body{
 }
 
 .nav-list-item{
-    vertical-align: middle;
-    display: inline-block;
-    padding: 0 12px;
+    margin-right: 3rem;
     transition: 0.3s ease;
 }
 
 .nav-list-items{
-    vertical-align: middle;
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 320px);
+    display: flex;
+    list-style: none;
     margin: 0;
 }
 
 .nav-list-items li a{
     text-decoration: none;
-    color: rgba(5, 5, 5, 0.87);
-    color: inherit;
+    color: rgb(180, 180, 180);;
     font-size: 1.6rem;
+    padding: 2px 6px;
 }
 
 .nav-list-item:hover{
     transform: scale(1.2);
     background-color: rgba(0, 0, 0, 0.658);
-    color: #44b0d1bb;
+    color: #ffffff;
     border-radius: 7px;
 }
 
@@ -84,9 +84,9 @@ body{
     height: 80vh;
     width: 100%;
     background: url(../Images/wallpapersden.com_microphone-music-bw_5120x2880.jpg) no-repeat;
-    background-size: 95% 100%;
-    background-position: 20px 48px;
-    padding: 20px;
+    background-size: 100%;
+    /* background-position: 20px 48px; */
+    padding: 2rem;
     margin-left: 0;
     color: white;
     animation: yourAnimation1 1.2s forwards 0s ease-out;
@@ -117,8 +117,8 @@ body{
     position: absolute;
     top: 40%;
     left: 5.6%;
-    font-size: 100px;
-    font-weight: 600;
+    font-size: 10rem;
+    font-weight: 500;
     animation: yourAnimation2 1.4s forwards 0s ease;
 }
 
@@ -137,7 +137,8 @@ body{
     position: absolute;
     top: 56%;
     left: 5.6%;
-    font-size: 40px;
+    font-size: 4rem;
+    color: rgb(155, 155, 155);
 }
 
 .showcase p{
@@ -151,7 +152,7 @@ body{
     vertical-align: middle;
     top: 48%;
     left: 5.6%;
-    width: 80px;
+    width: 8rem;
     padding: 5px 10px;
     border-radius: 10px;
     border: 0;
@@ -168,19 +169,24 @@ body{
 .header h1{
     color: #ffffff;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 15rem;
+    margin-bottom: 4rem;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .sub-header{
     color: #ffffff;
     text-align: center;
-    margin-top: 140px;
-    margin-bottom: 20px;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
     font-size: 40px;
     font-weight: 500;
 
+}
+
+.student-list{
+    width: auto;
 }
 
 .main{
@@ -191,11 +197,11 @@ body{
 }
 
 .content-para{
-    font-size: 20px;
-    color: white;
-    width: 50%;
-    padding: 40px;
-    text-align: center;
+    font-size: 2rem;
+    color: rgb(197, 197, 197);
+    width: 80rem;
+    padding: 0 4rem;
+    text-align: justify;
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -208,65 +214,13 @@ body{
 }
 
 .events-photo{
-    padding: 26px;
+    padding: 2.6rem;
     width: 80rem;
 }
 
-.cropped2 {
-    width: 42%; /* width of container */
-    height: 42%; /* height of container */
-    object-fit: cover;
-    object-position: 0 120px; /* try 20px 10px */ 
+.color-grey{
+    color: rgb(151, 151, 151);
 }
-
-/* .flex-container{
-margin-top: 0px;
-clear: both;
-float: inline-start;
-align-items: center;
-}
-
-.flex-item{
-    width: 370px;
-    height: 200px;
-    display: inline-block;
-    text-align: center;
-    margin: 1.66%;
-    vertical-align: middle;
-    border: #4c4e52 1px solid;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #303a52;
-    color: rgb(238, 234, 234);
-    transition: 0.5s;
-}
-
-.flex-item img{
-    padding-top: 12px;
-} */
-
-/* #big-item{
-    padding-top: 9px;
-}
-
-.main .flex-container .flex-item:hover{
-    transform: scale(1.1);
-    border-radius: 10px;
-}
-
-.main .flex-container .flex-item h5{
-    font-size: 25px;
-    letter-spacing: 0.5px;
-    margin: 20px 0px;
-}
-
-.main .flex-container .flex-item p{
-    width: 180px;
-    text-align: center;
-    margin: auto;
-    color: rgb(238, 234, 234);
-    font-size: 15px;
-} */
 
 footer{
     background-color: #333;
@@ -278,38 +232,41 @@ footer{
 }
 
 footer p{
-    display: inline;
-    text-align: justify;
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 550px);
+    margin-bottom: 1rem;
 }
 
-footer h2{
-    display: inline;
+footer h3{
+    display: inline-block;
     font-size: 1.6rem;
     font-weight: 300;
     text-align: left;
     padding-right: 3rem;
+    width: 500px;
+    margin: 0;
 }
 
-[data-scroll]{
-    transition: all 1.2s;
-}
-
-[data-scroll="in"]{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-[data-scroll="out"]{
-    opacity: 0.15;
-    transform: translateY(30%);
-}
-@keyframes yourAnimation3{
-    0%{
-        transform: rotate(0) translateY(-25%);
-        opacity: 0.1;
-        }
-    100%{
-        transform: rotate(0) translateY(0);
-        opacity: 1;
-        }
-}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{font-size: 6px;}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    html{font-size: 6px;}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    html{font-size: 8px;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    html{font-size: 10px;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    html{font-size: 12px;}
+  }
