@@ -35,6 +35,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .brand-logo{
@@ -83,8 +84,8 @@ body{
 .showcase{
     height: 80vh;
     width: 100%;
-    background: url(../Images/wallpapersden.com_microphone-music-bw_5120x2880.jpg) no-repeat;
-    background-size: 100%;
+    /* background: url(../Images/mic-bg.png) no-repeat; */
+    /* background-size: 100%; */
     /* background-position: 20px 48px; */
     padding: 2rem;
     margin-left: 0;
@@ -110,12 +111,12 @@ body{
     top: 15%;
     right: 5%;
     z-index: -1;
-    width: 30%;
+    width: 60rem;
 }
 
 .showcase h1{
     position: absolute;
-    top: 40%;
+    top: 18rem;
     left: 5.6%;
     font-size: 10rem;
     font-weight: 500;
@@ -135,7 +136,7 @@ body{
 
 .showcase h2{
     position: absolute;
-    top: 56%;
+    top: 30rem;
     left: 5.6%;
     font-size: 4rem;
     color: rgb(155, 155, 155);
@@ -171,7 +172,7 @@ body{
     text-align: center;
     margin-top: 15rem;
     margin-bottom: 4rem;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 300;
 }
 
@@ -180,7 +181,7 @@ body{
     text-align: center;
     margin-top: 10rem;
     margin-bottom: 1rem;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 500;
 
 }
@@ -225,16 +226,16 @@ body{
 footer{
     background-color: #333;
     color: #fff;
-    /* text-align: center; */
     padding: 1.2rem;
     margin-top: 4%;
     font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer p{
     display: inline-block;
     text-align: right;
-    width: calc(100% - 550px);
     margin-bottom: 1rem;
 }
 
@@ -248,12 +249,24 @@ footer h3{
     margin: 0;
 }
 
+@media screen and (max-width: 992px) {
+    .showcase{ height: 65vh;}
+  }
+@media screen and (max-width: 768px) {
+    .showcase{ height: 50vh;}
+  }
 /* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     html{font-size: 6px;}
+    } 
+@media only screen and (max-width: 480px) {
+    html{font-size: 4px;}
+    .showcase{ height: 30vh;}
     }
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+    
+
+    @media only screen and (min-width: 600px) {
     html{font-size: 6px;}
     } 
   /* Medium devices (landscape tablets, 768px and up) */
@@ -270,3 +283,7 @@ footer h3{
   @media only screen and (min-width: 1200px) {
     html{font-size: 12px;}
   }
+
+  
+
+ 
